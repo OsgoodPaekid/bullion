@@ -481,10 +481,20 @@ footer > div > div > p{
 .silver-gap{
   margin-left: 8px;
   font-size: large;
+  color: #000;
+}
+
+.silver-gap:hover{
+  color: #f0c44c;
 }
 
 .gold-gap{
   font-size: large;
+  color: #000;
+}
+
+.gold-gap:hover{
+  color: #f0c44c;
 }
 
 #gold-nav{
