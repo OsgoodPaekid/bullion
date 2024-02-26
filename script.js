@@ -94,7 +94,7 @@ class UI{
     let tempTotal=0;
     let itemsTotal=0;
     cart.map(item =>{
-     tempTotal += item.price * item.amount;
+     tempTotal += item.price * item.amount + 100;
      itemsTotal += item.amount;
     })
     cartTotal.innerText = parseFloat(tempTotal.toFixed(2))
@@ -278,10 +278,6 @@ function onToggleMenu(e){
 }
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevents the default form submission behavior
-
-  // Perform any form validation or processing here
-
-  // Redirect to a different page
+  event.preventDefault(); 
   window.location.href = "shipping.html";
-});
+}); 
